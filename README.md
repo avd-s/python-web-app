@@ -1,2 +1,3 @@
 # python-web-app
-sends back avg height and weight with bmi as form of a email 
+req: Flask 
+python packages : smtplib , mimetext,sqlalchemy,psychopg.
