@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Data Collector App</title>
+  <head>
+      <link href="../static/main.css" rel="stylesheet">  
+  </head>
+    <body>
+      <div class="container">
+         <h1>Collecting Height And Weight For Finding The Average </h1>
+         <h3>Please Enter your Data</h3>
+         <div class="message">
+           {{text | safe}}
+         </div>
+         <form action="{{url_for('success')}}" method="POST">
+            <input title="Your email will be safe with us" placeholder="Enter your email" type="email" name="email_name" required> <br>
+            <input title="Your Data will be safe with us" placeholder="Enter your height in cm" type="number" min="50", max="300" name="height_name" required> <br>
+            <input title="Your Data will be safe with us" placeholder="Enter your weight in kg" type="number" min="0", max="300" name="weight_name" required> <br>
+            <button type="submit">submit</button>
+         </form>
+      </div>
+    </body>
+</html>
